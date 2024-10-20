@@ -41,6 +41,7 @@ export default function Home() {
           setErrorMessage("No data found.");
         }
       } catch (err) {
+        console.error(err); // {{ edit_1 }}
         setErrorMessage("Failed to load fundraiser data.");
       } finally {
         setLoading(false);
